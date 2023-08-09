@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block loginForm %}
+{{ form.hidden_tag() }}
+
+  {% for field in form
+         if field.widget.input_type != 'hidden' %}
+
+    <p class = "hidden">
+      {{ field }}
+    </p>
+
+  {% endfor %}
+{% endblock %}
+{% block backBtn %}
+<a href="/"> go back</a>
+{% endblock %}

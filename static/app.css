@@ -1,0 +1,341 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#TitleH1{
+    transition: .6s;
+    color: rgb(122, 122, 122);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    font-family:Impact, fantasy;
+    
+}
+.laptopBox{
+    position: absolute;
+    margin-top: 6rem;
+    margin-left: 10rem;
+}
+.laptopImg{
+    height: 30rem;
+    width: auto;
+}
+.computerscreen{
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: absolute;
+    margin-left: 8rem;
+    margin-top: 3rem;
+    height: 8rem;
+    width: auto;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.circle{
+    transition: .6s;
+    border: 2px solid rgb(255, 255, 255);
+    width: 4rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-left: 11rem;
+    /* border-radius: 50px; */
+    border-top-left-radius: 60px;
+   
+}
+.circle2{
+    transition: .6s;
+    border: 2px solid rgb(255, 255, 255);
+    width: 4rem;
+    height: 4rem;
+    margin-top: -4rem;
+    margin-left: 15rem;
+    /* border-radius: 50px; */
+    border-top-right-radius: 60px;
+}
+.circle3{
+    transition: .6s;
+    border: 2px solid rgb(255, 255, 255);
+    width: 4rem;
+    height: 4rem;
+    margin-top: 0rem;
+    margin-left: 15rem;
+    border-bottom-right-radius: 60px;
+}
+.circle4{
+    transition: .6s;
+    border: 2px solid rgb(255, 255, 255);
+    width: 4rem;
+    height: 4rem;
+    margin-top: -4rem;
+    margin-left: 11rem;
+    /* border-radius: 50px; */
+    border-bottom-left-radius: 60px;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 35rem;
+    margin-top: 10rem;
+    margin-left: 60rem;
+    justify-content: center;
+    border: .1px solid rgb(255, 255, 255);
+    box-shadow: 1px 2px 16px rgb(212, 212, 212);
+    border-radius: 15px;
+    
+}
+.flex-container2{
+    align-self: center;
+    transition: 1s;
+    display:flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 47rem;
+    margin-top: 4rem;
+    margin-left: 60rem;
+    justify-content: center;
+    border: 1px solid rgb(236, 236, 236);
+    box-shadow: 1px 2px 10px rgb(219, 219, 219);
+    
+}
+
+
+
+.SignUp{
+    transition: .5s;
+    margin-top: 4rem;
+    width: 13rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(53, 174, 255);
+
+
+}
+
+.SignUp2{
+    transition: visibility 0s 2s, opacity .3s ;
+    opacity: 0;
+    margin-top: 4rem;
+    width: 13rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(53, 174, 255);
+    border-radius: 5px;
+    color: white;
+    visibility: hidden;
+   
+
+}
+.SignUp:hover{
+    background-color: rgb(76, 76, 76);
+
+}
+.login{
+    transition: .5s;
+    margin-bottom: -1rem;
+    width: 13rem;
+    border: 1px solid white;
+    background-color: rgb(53, 174, 255);
+
+}
+
+.login:hover{
+    background-color: rgb(81, 81, 81);
+
+}
+
+.hidden{
+    /* visibility: hidden; */
+    display: none;
+}
+.hidden2{
+    /* visibility: hidden; */
+    display: none;
+}
+.showing > input{
+    border-radius: 10px;
+    border: .5px solid white;
+    background-color: aliceblue;
+    transition: 1s;
+    margin-top: -1rem;
+}
+
+.navbar{
+    padding-top: 1rem;
+    background-color: #adb5bd;
+    box-shadow: 0px 1px 4px rgb(209, 209, 209);
+}
+
+
+.dropbtn {
+    text-align: left;
+    background-color: #ffffff;
+    color: white;
+    padding: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 5px rgb(130, 130, 130);
+    border: none;
+  }
+  
+
+  .dropdown {
+    position: relative;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    left:-4.5rem;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 2rem;
+  }
+  
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    transition: .8s;
+}
+
+  .dropdown:hover .dropdown-content {
+
+    display: block;
+    transition: ease-in 1s;
+}
+
+  .dropdown:hover .dropbtn {
+    color:white;
+    background-color: #b5b5b5;
+    transition: .8s;
+}
+  .dropbtn:hover{
+    border-radius: 0px;
+    transition: .8s;
+}
+
+.generatorBox{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    width: 50%;
+    margin-top:30rem;
+    /* width: 10rem; */
+
+}
+button{
+    border: 1px solid white;
+}
+button:hover{
+    transition: .5s;
+    background-color:rgb(53, 174, 255); ;
+}
+.numberBox{
+    position: absolute;
+    height: 13rem;
+    margin-top: 15rem;
+    /* margin:auto; */
+    width: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    left:26rem;
+    z-index: 1;
+}
+
+.dropdown-content2{
+    display: none;
+    visibility: hidden;
+    z-index: -1;
+}
+.dropdown2:hover div{
+    display: block;
+    visibility: visible;
+    border: 1px solid rgb(248, 248, 248);
+    box-shadow: 1px 1px 10px grey;
+}
+
+.dropdown2 a{
+    text-decoration: none;
+    color : grey;
+    padding-left: .3rem;
+}
+.dropdown2 a:hover{
+    transition: .5s;
+    text-decoration: none;
+    color : rgb(0, 0, 0);
+    padding-left: .3rem;
+    font-weight: 500;
+}
+.country{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.gameDropDown{
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+.gameDropDown-content{
+    display: none;
+}
+.gameDropDown-content:hover{
+    display: flex;
+    flex-direction: column;
+}
+.generateDropDown{
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    width: 100%;
+}
+
+.gameDropDown:hover div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    height: 10rem;
+    margin: auto;
+    width: 100%;
+}
+
+.gameDropDown a{
+    text-decoration: none;
+    color : grey;
+    padding-left: .3rem;
+}
+.gameDropDown a:hover{
+    transition: .2s;
+    text-decoration: none;
+    font-size: large;
+    color : rgb(0, 0, 0);
+    padding-left: .3rem;
+}
+

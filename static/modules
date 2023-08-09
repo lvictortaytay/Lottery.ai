@@ -1,0 +1,23 @@
+const loginHtmlData = `{% extends "index.html" %}
+{% block signUpForm %}
+{{ form.hidden_tag() }}
+
+  {% for field in form
+         if field.widget.input_type != 'hidden' %}
+
+    <p>
+      {{ field }}
+    </p>
+
+  {% endfor %}
+{% endblock %}
+{% block backBtn %}
+<a href="/"> go back</a>
+{% endblock %}`
+
+
+
+export const pictureUrls = ["https://yt3.googleusercontent.com/ytc/AOPolaT0fgUL1ydXqt8NqyolY-ubQz5kg-1nHKzrGpaGGw=s900-c-k-c0x00ffffff-no-rj" ,
+ "https://www.kslottery.com/images/megamillions_lrg.png" , 
+ "https://www.mlive.com/resizer/n2GV_atuS4BHbYpk7Zi5w13yIns=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/WFOXLUNPMZHMRJ4SV2KQYPW7F4.jpg"]
+module.eports = {loginHtmlData , pictureUrls}

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} <title>LOTPICK</title> {% endblock %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel = "stylesheet" type = "text/css" href = "static/app.css">
+    <script src="https://unpkg.com/axios/dist/axios.js" defer ></script>
+    <script type = "text/javascript" src = "static/index.js" defer ></script>
+    
+    
+</head>
+<body>
+    
+
+    <div id = "root">
+
+    </div>
+
+    <span><div class = "laptopBox">
+        <div>
+            <img class = "computerscreen">
+        </div>
+
+        <img src = "static/computer_pic.png" class = "laptopImg">
+
+    </div>
+    </span>
+    <container class = "flex-container">
+        
+      
+            <div class = "circle text-center">
+            </div>
+            <div class = "circle2 text-center">
+            </div>
+            <div class = "circle3 text-center">
+            </div>
+            <div class = "circle4 text-center">
+            </div>
+            
+                
+            </div>
+            <span><h1 class = "text-center" id = "TitleH1">L O T P I C K</h1></span>
+            </div>
+
+<!--             
+            <div>
+            <form method = "POST" action = "/" class = "form text-center">
+                <button type = "submit" class = "btn btn-secondary login">Login!</button>
+            </form>
+            </div> -->
+            <br>
+
+
+            <div>
+                
+
+               
+            <form method = "POST" action = "/" class = "form text-center">
+                {{ form.hidden_tag() }}
+
+                {% for field in signUp
+                if field.widget.input_type != 'hidden' %}
+
+                <p class = "hidden2">
+                    {{ field }}
+                </p>
+
+                {% endfor %}
+                <button type = "submit" class = "btn btn-secondary SignUp">Sign Up</button>
+            </form>
+            {% block backBtn %}
+            {% endblock %}
+
+       
+
+            <form method = "POST" action = "/" class = "form text-center ">
+                    {{ form.hidden_tag() }}
+
+                    {% for field in form
+                    if field.widget.input_type != 'hidden' %}
+
+                    <p class = "hidden">
+                        {{ field }}
+                    </p>
+
+                    {% endfor %}
+                  
+                <button type = "submit" class = "btn btn-secondary login">Login</button>
+<br>
+<br>
+                <a href="/" id = "goBackBtn" class = "hidden">go back</a>
+            </form>
+            
+            </div>
+     
+
+
+    </container>
+
+    <br>
+    <br>
+    <br>
+    <h6 class = "text-center text-secondary"> Save time with AI! Introducing a new and interactive way to not only generate lottery numbers ,
+         but also stay up to date with lottery winnings all through your devices!</h3>
+    
+    
+
+
+
+</body>
+
+
+<!-- <script src="https://unpkg.com/react/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone"></script> -->
+
+</html> 
