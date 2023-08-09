@@ -4,3 +4,4 @@ Are you tired of brainstorming numbers for the lottery? Are you tired of forgett
 
 
 [lottery AI API link](https://fungenerators.com/api/lottery/)# Lottery.ai
+# Lottery.ai
